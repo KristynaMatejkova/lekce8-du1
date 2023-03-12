@@ -1,11 +1,5 @@
 //Catering
 
-/*
-
-Vyzkoušjte si vaše funkce v konzoli. Poté napište funkci createEvent, která představuje vytvoření nějaké události s cateringem.
- Funkce na vstupu obdrží název události, počet lidí a funkci, pomocí které se má provést catering. Funkce createEvent pak vrátí
-  zprávu ve smyslu*/
-
 const justFood = (pocetOsob) => {
     return `catering od Just Food pro ${pocetOsob} osob za ${pocetOsob * 100} Kč`
 }
@@ -21,3 +15,23 @@ const flavourHaven = (pocetOsob) => {
 const createEvent = (udalost, pocetOsob, catering) => {
     return `Událost ${udalost} s ${catering(pocetOsob)}`
 }
+/*
+//Cvičení: Objednávka
+
+const button = document.querySelector('#btn-order')
+
+const changeTitle = () => {
+    button.textContent= 'Objednáno'
+}
+
+button.addEventListener('click', changeTitle)
+
+//Kontrola dostupnosti 
+
+const timeIsUp = () => {
+    button.textContent= 'Objednat'
+    button.disabled=false
+}
+
+setTimeout(timeIsUp, 8000)
+*/
